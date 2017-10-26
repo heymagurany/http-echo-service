@@ -22,6 +22,7 @@ var server = http.createServer((request, response) => {
   request.on('end', () => {
     response.writeHead(statusCode);
     response.end();
+    process.stdout.write('\n');
   });
 });
 
